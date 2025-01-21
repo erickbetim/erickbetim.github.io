@@ -2,21 +2,17 @@
 <html>
 <body>
 
-<h2>Date Field Restrictions</h2>
+<h2>Campo Númerico</h2>
 
-<p>Use the min and max attributes to add restrictions to dates:</p>
+<p>O <strong>tipo de entrada = "número"</strong> define um campo de entrada numérico.</p>
+
+<p>Você pode usar os atributos min e max para adicionar restrições numéricas no campo de entrada:</p>
 
 <form action="/action_page.php">
-  <label for="datemin">Enter a date after 2000-01-01:</label>
-  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
-
-  <label for="datemax">Enter a date before 1980-01-01:</label>
-  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
-  
-  <input type="submit" value="Submit">
+  <label for="quantity">Quantidade (entre 1 e 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+  <input type="submit" value="enviar">
 </form>
-
-<p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11.</p>
 
 </body>
 </html>
